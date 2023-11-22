@@ -1,0 +1,26 @@
+Alphabet 
+
+a b c d e f g h i j k l m n o ö p q r s t u v w x y z 
+
+%{O%}:o
+%{I%}:i
+%{i%}:i %{i%}:0
+
+%>:0
+
+;
+
+Sets
+
+Vow = a e i o u ;
+
+Rules
+
+"Vowel harmony with {O}- prefix"
+a:Vx <=> Vy: %>: _ ;
+     where Vx in ( o i ) 
+           Vy in ( %{O%} %{I%} ) 
+     matched ; 
+
+"Elision of {O} before vowel"
+%{O%}:0 <=> _ %>: [ Vow - a ] ; 

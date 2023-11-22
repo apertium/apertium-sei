@@ -1,0 +1,249 @@
+Multichar_Symbols
+
+
+%<v%> 
+%<n%>
+%<cnjcoo%>
+%<mark%>
+%<adv%>
+
+%<tv%>
+%<iv%> 
+
+%<rel%>
+
+%<realm%>
+
+%<s_sg1%>
+%<s_sg2%>
+%<s_sg3%>
+%<s_pl1%>
+%<s_pl2%>
+%<s_pl3%>
+
+%<o_sg1%>
+%<o_sg2%>
+
+%<del%>
+
+%<sent%>
+%<cm%>
+
+%{O%}
+%{I%}
+%{i%}
+
+LEXICON Root
+
+Prefijos ;
+Determinantes ;
+Miscellanea ;
+Auxiliares ; 
+Adverbios ; 
+Punctuación
+
+LEXICON Prefijos 
+
+AGR ; 
+POSS ;
+NONFIN ; 
+
+LEXICON NONFIN 
+
+%<rels%>:c%>               STEM ; 
+
+LEXICON AGR
+
+AGR-IOBJ ;
+AGR-OBJ ;
+AGR-SUBJ-INTR ;
+
+LEXICON AGR-IOBJ
+
+%<i_sg3%>:cö%>             AGR-SUBJ-TRAN ; 
+                           AGR-SUBJ-TRAN ;
+%<i_sg3%>:cö%>             AGR-SUBJ-INTR ; 
+                           AGR-SUBJ-INTR ;
+
+LEXICON AGR-OBJ
+
+%<o_sg1%>:hi%{m%}%>        AGR-SUBJ-TRAN ; 
+                           AGR-SUBJ-TRAN ;
+
+LEXICON AGR-SUBJ-INTR
+
+%<s_sg1%>:%{i%}hp%>        MOOD ; ! hp, intr
+%<s_pl1%>:ha%>             MOOD ; 
+%<s_sg2%>:m%>              MOOD ; 
+%<s_sg1%>%<emph%>:ca%>      MOOD ; ! ca, intr
+%<s_pl2%>:ma%>             MOOD ; 
+!%<s_sp3%>:i%>              MOOD ;  ! only for transitives
+! There is no overt inflection for subject p3 in finite, intransitive
+%<s_sp3%>:                 MOOD ;  ! Only applies to finite + intransitive
+
+LEXICON AGR-SUBJ-TRAN
+
+
+%<s_sg1%>:%{i%}h%>         MOOD ; 
+%<s_pl1%>:ha%>             MOOD ; 
+%<s_sg1%>%<emph%>:a%>      MOOD ; 
+%<s_sg2%>:m%>              MOOD ; 
+%<s_sp3%>:i%>              MOOD ; 
+%<s_pl2%>:ma%>             MOOD ; 
+                           MOOD ;
+
+LEXICON MOOD
+
+%<realt%>:t%>              NEG ;
+%<sub%>:tm%>               STEM ;
+%<dep%>:p%{O%}%>           NEG ;
+%<realy%>:y%{O%}%>         NEG ;
+%<emph%>:x%{O%}%>          NEG ;
+%<indep%>:s%{i%}%>         NEG ;
+%<realm%>:m%{I%}%>             STEM ;
+
+LEXICON NEG 
+
+%<neg%>:m%> STEM ;
+            STEM ;
+
+LEXICON POSS
+
+%<px1sg%>:h%> SUST ;
+%<px2sg%>:mi%> SUST ;
+%<px3sg%>:i%> SUST ;
+              Sustantivos ;
+LEXICON SUST
+
+Sustantivos ; 
+Relacionales ; 
+
+LEXICON STEM
+
+IV-STEM ;
+TV-STEM ;
+
+LEXICON PLUR
+
+%<pl%>:%>tim # ; 
+%<pl%>:%>toj # ; 
+             # ; 
+
+LEXICON V-TV 
+
+%<v%>%<tv%>: PLUR  ;
+
+LEXICON V-IV 
+
+%<v%>%<iv%>: PLUR  ;
+
+LEXICON DET
+
+%<det%>: # ;
+
+LEXICON N-REL
+
+%<n%>%<rel%>: # ;
+
+LEXICON N
+
+%<n%>: # ;
+
+LEXICON CC 
+
+%<cnjcoo%>: # ;
+
+LEXICON MARK
+
+%<mark%>: # ;
+
+LEXICON AUX
+
+%<aux%>: # ;
+
+LEXICON ADV-DEL 
+
+%<adv%>%<del%>: # ;
+
+LEXICON ADV
+
+%<adv%>: # ;
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Miscellanea
+
+x:x CC ; ! "y"
+xah:xah CC ; ! ""
+x:x MARK ; ! ""
+
+LEXICON Auxiliares 
+
+aha:aha AUX ; ! ""
+iha:iha AUX ; ! ""
+haa:haa AUX ; ! ""
+ha:ha AUX ; ! ""
+! caha - subj.nominalised aux
+
+LEXICON Determinantes 
+
+com:com DET ;
+cop:cop DET ;
+cap:cap DET ;
+!caha:caha DET ;
+hac:hac DET ;
+quih:quih DET ;
+quij:quij DET ;
+pac:pac DET ;
+zo:zo DET ;
+zo:z DET ; ! antes de vocal?
+cmaam:cmaam DET ;
+coi:coi DET ;
+
+LEXICON Relacionales 
+
+ti:ti N-REL ; ! "en"
+
+iicp:iicp N-REL ; ! "al lado"
+mac:mac N-REL ; ! "entre"
+
+tacl:tacl N-REL ; ! "encima"
+tacaj:tacaj N-REL ; ! "encima"
+
+LEXICON Sustantivos 
+
+hant:hant N ; ! "tierra"
+haxz:haxz N ; ! "perro"
+hehe:hehe N ; ! "planta, leña"
+zamij:zamij N ; ! "palma"
+ziix:ziix N ; ! "cosa"
+
+
+LEXICON Adverbios 
+
+oo:oo ADV-DEL ; ! ""
+hax:hax ADV ; ! ""
+anxö:anxö ADV ; ! ""
+
+LEXICON IV-STEM 
+
+cap:cap V-IV ; ! "volar"
+ap:ap V-IV ; ! "estar parado" 
+apox:apox V-IV ; ! "quitar"
+eeti:eeti V-IV ; ! "recoger"
+iij:iij V-IV ; ! ""
+panzx:panzx V-IV ; ! "correr"
+
+LEXICON TV-STEM 
+
+nipa:nipa V-TV ; ! "hit"
+
+LEXICON Punctuación
+
+%.%<sent%>:%. # ; 
+%,%<cm%>:%, # ; 
+%¿%<sent%>:%¿ # ; 
+%?%<sent%>:%? # ; 
+%¡%<sent%>:%¡ # ; 
+%!%<sent%>:%! # ; 
